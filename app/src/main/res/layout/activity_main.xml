@@ -18,13 +18,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/btn_list"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="list view 화면으로 이동"
+        app:backgroundTint="#AB778178"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a" />
+
+    <Button
         android:id="@+id/btn_a"
         android:layout_width="70dp"
         android:layout_height="60dp"
-        android:background="@drawable/panic_button"
-        app:backgroundTint="#AB778178"
         android:layout_marginTop="10dp"
         android:text="서브 화면으로 이동"
+        app:backgroundTint="#AB778178"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_textMsg" />
