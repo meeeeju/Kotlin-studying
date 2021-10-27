@@ -46,4 +46,6 @@ class MainActivity2 : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         }
 
     }
+
+
 }

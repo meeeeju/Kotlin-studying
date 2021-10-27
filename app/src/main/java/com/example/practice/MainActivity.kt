@@ -1,14 +1,18 @@
+//버튼 누르면 화면 넘어가기 (화면 전환)
+//activity_main + activity_sub
+
 package com.example.practice
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-
+    var a :Int=0;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,9 +39,22 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent2)
 
         }
+        a=2;
 
+        if (a==2)
+        {
+            Log.d("if 문 ","ENTER")  //로그 안에는 무조권 문자값을 가져야함!!
 
+        }
+        else if (a==1){
+            Log.d("else 문 ","ENTER")  //로그 안에는 무조권 문자값을 가져야함!!
+
+        }
+        Log.d("현재 a의 값 ",a.toString())  //로그 안에는 무조권 문자값을 가져야함!!
+        Log.e("현재 a의 값 ",a.toString())  //로그 안에는 무조권 문자값을 가져야함!!
 
 
     }
+
+
 }
